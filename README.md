@@ -8,23 +8,9 @@ A collection of end-to-end data analysis projects covering real-world business p
 
 | # | Project | Description | Tools |
 |---|---------|-------------|-------|
-| 01 | [Retail Inventory Optimization](./01-retail-inventory-optimization/) | Identify stockout risks and propose reorder policies using sales history and supplier lead times | Python, pandas |
+| 01 | [Retail Inventory Optimization](./Retail_Inventory_Optimization/) | Analyzed ASOS product data to quantify revenue lost due to out-of-stock items (“phantom revenue”). Identified high-impact brands and products using stockout rates, price analysis, and a strategic quadrant visualization. | Python, pandas, matplotlib, seaborn |
 
 > More projects coming soon.
-
----
-
-## 📁 Repo Structure
-
-Each project folder follows this structure:
-
-```
-01-project-name/
-├── README.md          # Project overview, findings, and methodology
-├── notebooks/         # Jupyter notebooks with full analysis
-├── data/              # Raw and cleaned datasets
-└── outputs/           # Final reports, charts, or recommendation files
-```
 
 ---
 
