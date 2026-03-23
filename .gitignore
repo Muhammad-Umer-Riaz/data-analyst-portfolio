@@ -208,3 +208,6 @@ __marimo__/
 
 # adding old code txt file to gitignore
 old code.txt
+
+Customer_Churn_Prediction/Data/
+Customer_Churn_Prediction/Figures/
