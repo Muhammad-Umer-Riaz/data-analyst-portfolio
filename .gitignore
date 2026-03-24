@@ -213,6 +213,6 @@ old code.txt
 Customer_Churn_Prediction/Data/
 
 # Ignore the data directory containing the supply chain dashboard dataset
-Data/DataCoSupplyChainDataset.csv
-Data/tokenized_access_logs.csv
-Data/DescriptionDataCoSupplyChain.csv
+Supply_Chain_Operations_Dashboard/Data/DataCoSupplyChainDataset.csv
+Supply_Chain_Operations_Dashboard/Data/tokenized_access_logs.csv
+Supply_Chain_Operations_Dashboard/Data/DescriptionDataCoSupplyChain.csv
