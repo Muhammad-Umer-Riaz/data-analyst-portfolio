@@ -209,4 +209,10 @@ __marimo__/
 # adding old code txt file to gitignore
 old code.txt
 
+# Ignore the data directory containing the customer churn dataset
 Customer_Churn_Prediction/Data/
+
+# Ignore the data directory containing the supply chain dashboard dataset
+Data/DataCoSupplyChainDataset.csv
+Data/tokenized_access_logs.csv
+Data/DescriptionDataCoSupplyChain.csv
