@@ -151,3 +151,5 @@ jupyter notebook supplier_performance_analysis.ipynb
 
 *This is Project 2 in my data analyst portfolio.*  
 *→ See also: [Retail Inventory Optimisation](../Retail_Inventory_Optimization/)*
+*→ See also: [Customer Churn Prediction](../Customer_Churn_Prediction/)* 
+*→ See also: [Supply Chain Operations Dashboard](../Supply_Chain_Operations_Dashboard/)*
