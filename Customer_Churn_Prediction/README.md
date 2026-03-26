@@ -158,3 +158,4 @@ Customer_Churn_Prediction/
 *This is Project 3 in my data analyst portfolio.*  
 *→ See also: [Supplier Performance Analysis](../Supplier_Performance_Analysis/)*  
 *→ See also: [Retail Inventory Optimisation](../Retail_Inventory_Optimization/)*
+*→ See also: [Supply Chain Operations Dashboard](../Supply_Chain_Operations_Dashboard/)*
