@@ -1,25 +1,14 @@
-# Customer Churn Prediction
+# Customer Retention Intelligence: Telecom Churn Study
 
-**Tools:** Python 3.13 · pandas · matplotlib · seaborn · scikit-learn 1.8.0  
-**Dataset:** Telco Customer Churn (IBM / Kaggle) · 7,032 customers · 20 features  
 **Notebook:** [customer_churn_prediction.ipynb](customer_churn_prediction.ipynb)
 
 ---
 
 ## Project Overview
 
-This project builds an end-to-end supervised machine learning pipeline to predict 
-which telecom customers are likely to churn. Customer churn is one of the most 
-expensive problems in subscription-based industries — acquiring a new customer 
-costs significantly more than retaining an existing one. Identifying at-risk 
-customers before they leave gives the business a window to intervene with targeted 
-retention offers.
+Acquiring a new telecom customer costs significantly more than keeping an existing one — yet most churn happens quietly, with no warning until the cancellation comes through. The business question is straightforward: *which customers are most at risk of leaving, and what signals precede it?*
 
-The dataset contains information on 7,032 telecom customers including demographics, 
-account details, subscribed services, billing information, and whether they churned. 
-The workflow progresses from exploratory analysis through feature engineering, 
-pipeline construction, model comparison, hyperparameter tuning, and final evaluation 
-— producing both a deployable model and concrete business recommendations.
+This project analyses 7,032 telecom customers to identify the contract and behavioural patterns that predict churn. The output is a model that flags at-risk customers before they leave, paired with four prioritised retention actions for the commercial team — including a single threshold adjustment that catches 84 additional churners with no further modelling work required.
 
 ---
 
@@ -60,8 +49,8 @@ pipeline construction, model comparison, hyperparameter tuning, and final evalua
 | 1 | Exploratory Data Analysis — target distribution, numerical features, categorical churn rates |
 | 2 | Data Cleaning — TotalCharges conversion, drop customerID, standardise SeniorCitizen |
 | 3 | Feature Engineering — tenure_group, monthly_to_total_ratio, num_services |
-| 4 | Preprocessing Pipeline — ColumnTransformer with StandardScaler and OneHotEncoder |
-| 5 | Baseline Model Comparison — Logistic Regression, Random Forest, KNN via StratifiedKFold |
+| 4 | Data Preprocessing — scaling and encoding for model input |
+| 5 | Baseline Model Comparison — Logistic Regression, Random Forest, and KNN evaluated via cross-validation |
 | 6 | Hyperparameter Tuning — GridSearchCV on Logistic Regression and Random Forest |
 | 7 | Final Model Evaluation — ROC-AUC, accuracy, precision, recall, confusion matrix |
 | 8 | Feature Importance and Threshold Analysis — coefficients and precision-recall tradeoff |
@@ -81,7 +70,7 @@ pipeline construction, model comparison, hyperparameter tuning, and final evalua
 
 **Model selected:** Tuned Logistic Regression  
 **Best parameters:** C = 0.046, solver = newton-cg  
-**Recommended deployment threshold:** 0.3
+**Recommended deployment threshold:** 0.3 — at this threshold, the model flags 3 in 4 churners before they leave
 
 ---
 
@@ -115,6 +104,13 @@ Download the Telco Customer Churn dataset from Kaggle:
 https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 Place the CSV inside a `Data/` folder in this directory before running the notebook.
+
+---
+
+## Technical Details
+
+**Tools:** Python 3.13 · pandas · matplotlib · seaborn · scikit-learn 1.8.0  
+**Data:** Telco Customer Churn (IBM / Kaggle) · 7,032 customers · 20 features
 
 ---
 

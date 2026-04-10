@@ -1,21 +1,21 @@
 # 📊 Data Analyst Portfolio
 
-A collection of end-to-end data analysis projects covering real-world business problems across supply chain, retail, SaaS, and operations domains. Each project progresses from raw data through cleaning, exploratory analysis, and statistical or machine learning methods to actionable business recommendations.
+End-to-end analysis projects across supply chain, retail, and SaaS — each one starts with a real business problem, works through the data, and delivers recommendations a decision-maker can act on.
 
 ---
 
 ## 🗂️ Projects
 
-| # | Project | Description | Tools |
-|---|---------|-------------|-------|
-| 01 | [Retail Inventory Optimisation](./Retail_Inventory_Optimization/) | Analysed ASOS product data to quantify phantom revenue — sales lost due to stockouts. Segmented 150+ brands into strategic quadrants by price positioning and stockout rate, identifying high-impact inventory optimisation opportunities. | Python, pandas, matplotlib, seaborn |
-| 02 | [Supplier Performance & Stockout Analysis](./Supplier_Performance_Analysis/) | Analysed 12 months of simulated SAP ERP procurement data across 100 vendors and 500 materials. Quantified $20.99M in delayed procurement spend (62.8% of total), reconstructed historical stockouts from raw movement data, and built a composite supplier scorecard ranking all vendors across four weighted KPIs. | Python, pandas, SQL, sqlite3, matplotlib, seaborn, scipy |
-| 03 | [Customer Churn Prediction](./Customer_Churn_Prediction/) | Built an end-to-end supervised ML pipeline to predict telecom customer churn. Engineered three domain-driven features, compared three classifiers via StratifiedKFold cross-validation, and tuned a Logistic Regression model to ROC-AUC 0.841. Includes threshold analysis showing 76.5% recall at a 0.3 decision threshold. | Python, pandas, scikit-learn, matplotlib, seaborn |
-| 04 | [Supply Chain Operations Dashboard](./Supply_Chain_Operations_Dashboard/) | Built a full analytical workflow on 180,508 supply chain orders — heavy Python cleaning with datetime engineering and regex, EDA across delivery performance and commercial analysis, star schema design, and a two-page interactive Power BI dashboard. | Python, pandas, NumPy, matplotlib, seaborn, Power BI |
+| # | Project | Description | Key Outcome |
+|---|---------|-------------|-------------|
+| 01 | [Recovering Lost Sales: ASOS Stockout & Brand Strategy](./Retail_Inventory_Optimization/) | Every stockout is a sale that never happened. This project maps 150+ ASOS brands by price tier and stockout rate to identify which brands are leaking the most revenue — and where restocking investment has the highest return. | Mid-priced brands (£40–£60) carry the highest unmet demand; Topshop, Mango, and Pull&Bear identified as priority restocking targets |
+| 02 | [Supplier Risk & Procurement Cost Analysis](./Supplier_Performance_Analysis/) | Late deliveries don't just delay shipments — they tie up capital and cause stockouts that reach the customer. This project quantifies the cost of supplier unreliability across 100 vendors and produces a ranked scorecard to guide procurement decisions. | $20.99M in delayed spend identified (62.8% of total); 17 vendors flagged for immediate escalation; scorecard spans 51 points from best to worst |
+| 03 | [Customer Retention Intelligence: Telecom Churn Study](./Customer_Churn_Prediction/) | Most churn happens quietly, with no warning until the cancellation arrives. This project identifies the contract and behavioural signals that precede churn in 7,032 telecom customers — giving the retention team a ranked list of who to contact and when. | Model catches 76.5% of churners before they leave; month-to-month customers in their first year identified as the single highest-leverage retention target |
+| 04 | [Supply Chain Performance Dashboard](./Supply_Chain_Operations_Dashboard/) | A global supply chain with 180,508 orders, five markets, and a persistent delivery problem. This project surfaces where performance is breaking down and where revenue is concentrated — with a two-page Power BI dashboard for ongoing monitoring. | 59.1% late delivery rate uncovered; First Class shipping has a 0% on-time rate; Fan Shop generates 46.5% of total revenue despite no preferential treatment |
 
 ---
 
-## 🛠️ Tools & Skills
+## 🛠️ Technical Skills
 
 - **Python** — pandas, NumPy, matplotlib, seaborn, scipy, scikit-learn, Jupyter Notebooks
 - **SQL** — SQLite, multi-table joins, aggregations, CTEs, window logic

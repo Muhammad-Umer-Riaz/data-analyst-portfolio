@@ -1,18 +1,14 @@
-# ASOS Inventory & Phantom Revenue Analysis
+# Recovering Lost Sales: ASOS Stockout & Brand Strategy
 
-**Tools:** Python · pandas · matplotlib · seaborn  
-**Dataset:** ASOS Product Data (scraped/compiled) · ~150+ brands · pricing & stockout data  
 **Notebook:** [ASOS Inventory & Phantom Revenue Analysis.ipynb](ASOS%20Inventory%20%26%20Phantom%20Revenue%20Analysis.ipynb)
 
 ---
 
 ## Project Overview
 
-This project analyses pricing strategy and inventory availability across fashion brands sold on ASOS, with a focus on identifying phantom revenue opportunities — lost sales caused by stockouts.
+In e-commerce, every stockout is an invisible loss — a customer arrives ready to buy and leaves empty-handed. Unlike a discount or a clearance event, this revenue disappears silently: no transaction, no record, no alert.
 
-In e-commerce, stockouts represent hidden revenue leakage: customers arrive with intent to purchase but leave empty-handed due to unavailable inventory. This analysis explores how price positioning interacts with stockout rates, revealing inefficiencies in inventory planning and brand strategy.
-
-The workflow combines exploratory data analysis with strategic segmentation to uncover patterns across brands, highlight outliers, and translate insights into actionable recommendations for pricing and inventory optimisation.
+This project analyses pricing strategy and inventory availability across 150+ fashion brands sold on ASOS. By mapping each brand's price positioning against its stockout rate, the analysis surfaces which brands are leaking the most revenue — and where restocking investment will have the greatest return.
 
 ---
 
@@ -96,6 +92,13 @@ Download the dataset from the following drive link:
 https://drive.google.com/drive/folders/1W569j3au1iYVtWm5WeWer2gBGU2Xwzui
 
 Place the dataset in the same folder as the ipynb file.
+
+---
+
+## Technical Details
+
+**Tools:** Python · pandas · matplotlib · seaborn  
+**Data:** ASOS Product Data (scraped/compiled) · ~150+ brands · pricing & stockout data
 
 ---
 

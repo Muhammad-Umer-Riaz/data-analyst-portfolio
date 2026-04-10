@@ -1,22 +1,14 @@
-# Supplier Performance & Stockout Analysis
+# Supplier Risk & Procurement Cost Analysis
 
-**Tools:** Python 3.13 · pandas · matplotlib · seaborn · scipy · sqlite3  
-**Database:** Simulated SAP-style ERP (SQLite) · 11 tables · 100 vendors · 500 materials · 1,000 purchase orders  
 **Notebook:** [supplier_performance_analysis.ipynb](supplier_performance_analysis.ipynb)
 
 ---
 
 ## Project Overview
 
-This project analyses supplier delivery performance and its downstream impact  
-on inventory stockouts using a simulated ERP-style SQLite database modelled  
-after SAP. The database covers approximately 12 months of procurement and  
-inventory activity and was generated using the  
-[OCEL Inventory Management Simulator](https://github.com/LennartPurucker/ocel-inventory-management-simulator).
+When suppliers miss delivery deadlines, the cost doesn't show up in a single line item — it ripples across the business as emergency purchases, production stoppages, and stockouts that reach the customer. For a procurement team, understanding *which* suppliers are the problem and *how much* they're costing the business is the first step to fixing it.
 
-The analysis answers 7 business questions relevant to a procurement team,  
-progressing from exploratory lead time analysis through to a composite  
-supplier scorecard and actionable recommendations.
+This project analyses 12 months of procurement and inventory activity across 100 vendors and 500 materials. It quantifies the financial impact of late deliveries, identifies the vendors driving the most risk, and produces a composite scorecard that gives procurement a clear, data-backed priority list for supplier reviews.
 
 ---
 
@@ -101,8 +93,14 @@ on-time % (40%) · delayed order value (25%) · avg lead time (20%) · lead time
 
 ## Data Quality Notes
 
-See [data_quality.md](data_quality.md) for a full explanation of simulation  
-artefacts encountered and how they were handled.
+See [data_quality.md](data_quality.md) for a full explanation of data artefacts encountered and how they were handled.
+
+---
+
+## Technical Details
+
+**Tools:** Python 3.13 · pandas · matplotlib · seaborn · scipy · sqlite3  
+**Data:** Simulated SAP-style ERP (SQLite) · 11 tables · 100 vendors · 500 materials · 1,000 purchase orders — generated using the [OCEL Inventory Management Simulator](https://github.com/LennartPurucker/ocel-inventory-management-simulator)
 
 ---
 

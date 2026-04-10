@@ -216,6 +216,3 @@ Customer_Churn_Prediction/Data/
 Supply_Chain_Operations_Dashboard/Data/DataCoSupplyChainDataset.csv
 Supply_Chain_Operations_Dashboard/Data/tokenized_access_logs.csv
 Supply_Chain_Operations_Dashboard/Data/DescriptionDataCoSupplyChain.csv
-
-# Ignore the figure generated for the Retail Inventory Optimization project
-Retail_Inventory_Optimization/Brand Strategy Analysis.png

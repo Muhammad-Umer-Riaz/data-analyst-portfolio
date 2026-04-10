@@ -1,16 +1,14 @@
-# Supply Chain Operations Dashboard
+# Supply Chain Performance Dashboard
 
-**Tools:** Python 3.13 · pandas · NumPy · matplotlib · seaborn · Power BI  
-**Dataset:** DataCo Smart Supply Chain · 180,508 orders · 2015–2018  
 **Notebooks:** [supply_chain_cleaning.ipynb](supply_chain_cleaning.ipynb) · [supply_chain_EDA.ipynb](supply_chain_EDA.ipynb)
 
 ---
 
 ## Project Overview
 
-This project builds a full analytical workflow for a global e-commerce supply chain dataset — from raw data cleaning through exploratory analysis to a two-page interactive Power BI dashboard.
+A global e-commerce business processing 180,508 orders across five markets and four years has two persistent questions at the executive level: *Are we delivering on time?* and *Where is our revenue actually coming from?*
 
-The dataset covers 180,508 order lines across four years, five global markets, and eleven product departments. The workflow covers Python data cleaning, datetime and regex engineering, star schema design, and dashboard development. The two dashboard pages address the two core business questions the data can answer: how is delivery performance holding up, and where is revenue coming from?
+This project works through both — from raw data to a two-page interactive Power BI dashboard that any operations or commercial leader can use for ongoing monitoring. The analysis surfaces a systemic delivery failure and a significant revenue concentration that aren't visible in the raw numbers.
 
 ---
 
@@ -79,19 +77,16 @@ The raw flat file (52 columns, one row per order line) was split into a star sch
 
 ---
 
-## Python Cleaning Highlights
+## Data Preparation Notes
 
-**Datetime engineering:**
-- Parsed order and shipping date strings into datetime objects
+**Lead time & delivery performance:**
 - Calculated actual lead time in days from order to dispatch
 - Engineered delivery delay, on-time flag, and lead time performance bands
-- Extracted year, month, quarter, and year-month for time intelligence
+- Extracted year, month, quarter, and year-month for time-series analysis
 
-**Regex cleaning:**
-- Standardised city names, regions, and segment labels
-- Fixed acronym casing — USCA, US Center, East of USA
-- Parsed URL structure from access log file to extract department, category, and product name using path pattern matching
-- Decoded percent-encoded characters (%20, %26, %27) from URL strings
+**Data standardisation:**
+- Standardised market names, regions, city names, and customer segment labels
+- Parsed access log data to extract department, category, and product from URL paths
 
 **Feature engineering:**
 - `profit_margin_pct` — profit as a percentage of sales per order
@@ -105,8 +100,8 @@ The raw flat file (52 columns, one row per order line) was split into a star sch
 | Step | Description |
 |---|---|
 | 1 | Load and inspect raw file — shape, dtypes, nulls, duplicates |
-| 2 | Datetime parsing and lead time engineering |
-| 3 | String and regex cleaning — main dataset and access logs |
+| 2 | Lead time calculation and delivery performance flagging |
+| 3 | Data standardisation — markets, regions, segments, and product categories |
 | 4 | Feature engineering — margin, on-time flag, value bands |
 | 5 | Null handling and validation |
 | 6 | Star schema split — export four clean CSVs |
@@ -122,6 +117,13 @@ Download the DataCo Smart Supply Chain dataset from Kaggle:
 Search **"DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS"**
 
 Place the CSV inside the `Data/` folder before running the cleaning notebook.
+
+---
+
+## Technical Details
+
+**Tools:** Python 3.13 · pandas · NumPy · matplotlib · seaborn · Power BI  
+**Data:** DataCo Smart Supply Chain · 180,508 orders · 2015–2018
 
 ---
 
