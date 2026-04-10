@@ -1,0 +1,13 @@
+Shipping Id,Shipping Mode,Delivery Status
+0,Standard Class,Advance Shipping
+1,Standard Class,Late Delivery
+2,Standard Class,Shipping On Time
+3,Standard Class,Shipping Canceled
+4,First Class,Late Delivery
+5,Second Class,Late Delivery
+6,Second Class,Shipping Canceled
+7,Same Day,Shipping On Time
+8,Same Day,Late Delivery
+9,Same Day,Shipping Canceled
+10,Second Class,Shipping On Time
+11,First Class,Shipping Canceled
