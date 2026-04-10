@@ -210,9 +210,9 @@ __marimo__/
 old code.txt
 
 # Ignore the data directory containing the customer churn dataset
-Customer_Churn_Prediction/Data/
+Customer_Retention_Intelligence_Telecom_Churn_Study/Data/
 
 # Ignore the data directory containing the supply chain dashboard dataset
-Supply_Chain_Operations_Dashboard/Data/DataCoSupplyChainDataset.csv
-Supply_Chain_Operations_Dashboard/Data/tokenized_access_logs.csv
-Supply_Chain_Operations_Dashboard/Data/DescriptionDataCoSupplyChain.csv
+Supply_Chain_Performance_Dashboard/Data/DataCoSupplyChainDataset.csv
+Supply_Chain_Performance_Dashboard/Data/tokenized_access_logs.csv
+Supply_Chain_Performance_Dashboard/Data/DescriptionDataCoSupplyChain.csv
